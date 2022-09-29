@@ -18,9 +18,9 @@ public class PathTest {
 
     @Test
     public void testToImage() throws IOException {
-        font.getGlyphs().get(4).getPath().toImage(new File(TestUtils.assemblyOutFilePath("test.jpg")));
+        font.getGlyphs().get(100).getPath().toImage(new File(TestUtils.assemblyOutFilePath(font.getGlyphs().get(100).getName()+".jpg")));
     }
-
+    
     @Test
     public void testToSVGFile() throws IOException {
         font.getGlyphs().get(4).getPath().toSVG(TestUtils.assemblyOutFilePath("test.svg"));
@@ -37,6 +37,6 @@ public class PathTest {
 
     @Before
     public void initFont() throws IOException {
-        font = OpenType.parse(TestUtils.assemblyFilePath("Open-Sans-WOFF-1.0.woff"));
+        font = OpenType.parse(TestUtils.assemblyFilePath("83db004a.woff"));
     }
 }

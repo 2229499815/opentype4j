@@ -19,7 +19,7 @@ public class OpenTypeTest {
 
     @Test
     public void testParseOtf() throws IOException {
-        Font font = OpenType.parse(TestUtils.assemblyFilePath("FDArrayTest257.otf"));
-        System.out.println(font.getGlyphs().get(1).getPath().toSVGPath());
+        Font font = OpenType.parse(TestUtils.assemblyFilePath("83db004a.woff"));
+        System.out.println(font.getGlyphs().get(2).getPath().toSVGPath());
     }
 }
